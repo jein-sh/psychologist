@@ -12,6 +12,13 @@ const ttf2woff2 = require('gulp-ttf2woff2');
 const webp = require('gulp-webp');
 // const avif = require('gulp-avif');
 
+const ghPages = require('gh-pages');
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
+
 const server = function() {
     browserSync({
         server: {
@@ -95,4 +102,3 @@ exports.webpImages = webpImages;
 exports.watch = watch;
 
 exports.default = gulp.parallel(watch, server, images, webpImages, styles, scripts, fonts, icons, html);
-

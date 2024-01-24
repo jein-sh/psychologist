@@ -1,8 +1,7 @@
 ## Сайт психолога Алины Красновой
 
-HTML, CSS, SCSS, gulp, анимации GSAP, 
+HTML, CSS, Sass, gulp, анимации GSAP, 
 
 ### Основные команды для работы
 - Установка - `npm i`
 - Запуск проекта - `gulp`
-# psychologist

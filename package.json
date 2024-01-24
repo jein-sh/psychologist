@@ -4,7 +4,8 @@
   "description": "Dev",
   "main": "dev",
   "scripts": {
-    "test": "npm i"
+    "test": "npm i",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +30,7 @@
     "sass": "^1.57.1"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "gulp-avif": "^1.0.1",
     "gulp-babel": "^8.0.0",
     "swiper": "^7.4.1"
